@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengingat Olahraga</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h1>Pengingat Olahraga</h1>
+            <button id="addReminderButton">Tambah Pengingat</button>
+            <div id="popup" class="popup hidden">
+                <div class="popup-content">
+                    <h2>Atur Jam dan Tanggal Pengingat</h2>
+                    <input type="time" id="reminderTime">
+                    <input type="date" id="reminderDate">
+                    <button id="saveButton">Simpan</button>
+                    <select id="ringtoneSelect">
+                        <option value="Default">Default</option>
+                        <option value="Adzan">Adzan</option>
+                    </select>
+                </div>
+            </div>
+            <ul id="reminderList"></ul>
+        </div>
+        <div id="history" class="history-container">
+            <h3>Riwayat Alarm</h3>
+            <ul id="alarmHistoryList"></ul>
+        </div>
+        <div class="stop-alarm-button-container">
+            <button id="stopAlarmButton" class="hidden">Matikan Alarm</button>
+        </div>
+    </div>    
+    <script src="script.js"></script>
+</body>
+</html>
